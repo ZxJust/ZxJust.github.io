@@ -1,0 +1,37 @@
+highlighter: rouge
+gems: [jekyll-paginate]
+encoding: utf-8
+paginate: 8
+paginate_path: "page:num"
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+name: 水手夏想
+description: 闲扯淡
+url: http://ZxJust.github.io/
+email: 1286195289@qq.com
+
+defaults:
+ -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      show_ad: true
+
+navs:
+  -
+    href: /about/
+    label: 关于
+  -
+    href: /articles/
+    label: 目录
+    
+# ---------------- #
+#      Socials     #
+# ---------------- #
+github_id: ZxJust
+weibo_id: ZxJust
+zhihu_id: zxJust

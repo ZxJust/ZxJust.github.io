@@ -1,0 +1,43 @@
+.ss_ad {
+    align-content: center;
+    background: #27a768;
+    padding: 16px 8px;
+    margin: 24px auto;
+}
+
+.ss_ad a {
+    color: white;
+    padding: 4px 0;
+    text-decoration: none;
+    margin: 0;
+}
+
+.ss_ad a:hover {
+    color: #ffea00;
+}
+
+.ss_ad_title {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.ss_ad_subtitle {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.ss_ad_link {
+    text-align: center;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .ss_ad_subtitle {
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+    }
+}
