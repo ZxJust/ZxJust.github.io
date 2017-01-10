@@ -1,0 +1,14 @@
+<script src="/assets/js/zoom.js"></script>
+<script src="/assets/js/gotop.js"></script>
+<script type="text/javascript">
+  // 图片放大
+  var imgs = document.getElementById("post-content").getElementsByTagName("img");
+  for (var i = imgs.length - 1; i >= 0; i--) {
+    imgs[i].setAttribute("data-action", "zoom");
+  }
+
+  // 回到顶部
+  window.onload = function () {
+    goTop("btn-to-top");
+  }
+</script>

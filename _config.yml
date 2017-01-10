@@ -12,6 +12,9 @@ description: 闲扯淡
 url: http://ZxJust.github.io/
 email: 1286195289@qq.com
 
+# ---------------- #
+#      defaults    #
+# ---------------- #
 defaults:
  -
     scope:
@@ -21,6 +24,9 @@ defaults:
       layout: "post"
       show_ad: true
 
+# ---------------- #
+#      navs        #
+# ---------------- #
 navs:
   -
     href: /about/
@@ -28,7 +34,7 @@ navs:
   -
     href: /articles/
     label: 目录
-    
+
 # ---------------- #
 #      Socials     #
 # ---------------- #

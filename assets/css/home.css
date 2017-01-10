@@ -171,7 +171,7 @@ a {
     font-weight: bolder;
 }
 
-.post-excerpt {
+.post-category {
     margin-top: 24px;
     line-height: 1.6;
     display: inline-block;
@@ -180,7 +180,7 @@ a {
     font-size: 1em;
 }
 
-.post-excerpt:hover {
+.post-category:hover {
     color: #5A9094;
 }
 

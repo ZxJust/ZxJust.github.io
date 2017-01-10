@@ -5,64 +5,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="theme-color" content="#323D45">
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/post.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/home.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
-    {% if page.favicon %}
-    <link rel="icon" href={{page.favicon}}>
-    {% else %}
-    <link rel="icon" href=/assets/img/fav/post.png>
-    {% endif %}
-
+    {% include css.html %}
 </head>
-
 <body>
-
-<div class="head">
-    <div class="tool-bar">
-        <div class="bg"></div>
-        <a href="/" class="title">水手夏想</a>
-        {% for nav in site.navs %}
-        <a href="{{ nav.href }}" class="nav_item">{{ nav.label }}</a>
-        {% endfor %}
-    </div>
-</div>
+{% include header.html %}
 
 <div id="content" class="content">
-
     <div id="post-content"> {{ content }}</div>
-
-    {% if page.show_ad %}
-    <!-- {% include reward.html %} -->
-    <div style="border-bottom: dotted #303841 2px;"></div>
-    {% include ssbetter.html %}
-    {% endif %}
-    
 </div>
 
 {% include footer.html %}
 
 {% include cnzz.html %}
 
-<a class="fa fa-hand-o-up fa-2x" id="btn-to-top" href="javascript:;"></a>
-
-<script type="text/javascript">
-
-  // 图片放大
-  var imgs = document.getElementById("post-content").getElementsByTagName("img");
-  for (var i = imgs.length - 1; i >= 0; i--) {
-    imgs[i].setAttribute("data-action", "zoom");
-  }
-
-  // 回到顶部
-  window.onload = function () {
-    goTop("btn-to-top");
-  }
-</script>
-<script src="/assets/js/zoom.js"></script>
-<script src="/assets/js/gotop.js"></script>
-
+{% include js.html %}
 </body>
 </html>

@@ -1,43 +1,27 @@
 ---
 title: 水手夏想
 ---
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="theme-color" content="#323D45">
     <title>水手夏想</title>
     <link rel="icon" href="/assets/img/fav/home.png"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
 </head>
-
-<link rel="stylesheet" type="text/css" href="/assets/css/home.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/header.css">
-
-
 <body>
-
-<div class="head">
-    <div class="tool-bar">
-        <div class="bg"></div>
-        <a href="/" class="title">水手夏想</a>
-        {% for nav in site.navs %}
-        <a href="{{ nav.href }}" class="nav_item">{{ nav.label }}</a>
-        {% endfor %}
-    </div>
-</div>
+{% include header.html %}
 
 <div class="content">
-
     {% for post in paginator.posts %}
-
     <div class="post-item">
-
         <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-        <div class="post-date"><i class="fa fa-calendar fa-1x"> &nbsp;&nbsp;{{ post.date|date: "%m-%d,&nbsp;%Y" }}</i></div>
-        <a href="{{ post.url }}" class="post-excerpt">{{ post.excerpt }}</a>
-
+        <div class="post-date">
+          <i class="fa fa-calendar fa-1x"> &nbsp;&nbsp;{{ post.date|date: "%m-%d,&nbsp;%Y" }}</i>
+        </div>
+        <a href="{{ post.url }}" class="post-category">{{ post.category }}</a>
     </div>
-
     {% endfor %}
 
     <div class="bottom-page">
@@ -79,7 +63,6 @@ title: 水手夏想
             </div>
             {% endif %}
             {% endfor %}
-
         </div>
     </div>
 </div>
@@ -87,5 +70,4 @@ title: 水手夏想
 {% include footer.html %}
 
 {% include cnzz.html %}
-
 </body>
