@@ -98,7 +98,8 @@ img {
 }
 
 .category-title {
-    font-size: 1.6em;
+    font-size: 1.5em;
+    font-weight: bold;;
     display: inline-block;
 }
 
@@ -119,13 +120,12 @@ img {
 
 .article-title {
     width: 100%;
-    font-size: 1.08em;
+    font-size: 1em;
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     color: #333333;
-    font-weight: 400;
 }
 
 .article-date {
@@ -139,7 +139,7 @@ img {
 }
 
 H2 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     padding: 5px;
     border-bottom: 2px LightGrey solid;
     width: 100%;
