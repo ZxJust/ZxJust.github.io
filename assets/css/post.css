@@ -184,14 +184,14 @@ li {
     width: 100%;
 }
 
-a {
+.article-title a {
     text-decoration: none;
     padding: 1px;
-    color: #228fcd;
+    color: #555555;
 }
 
 a:hover {
-    color: gray;
+    color: #5A9094;
 }
 
 blockquote {

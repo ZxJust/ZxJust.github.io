@@ -13,7 +13,7 @@ favicon: /assets/img/fav/articles.png
   {% for post in category.last %}
   <div class="article-item">
       <div class="article-title">
-          <a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
+          <a href="{{ post.url }}" target="_blank" >{{ post.title }}</a>
           <span class="article-date">{{post.date | date:"%Y %m-%d"}}</span>
       </div>
   </div>
