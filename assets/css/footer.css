@@ -30,3 +30,17 @@
 .footer-icon a:hover{
     color: #399df1;
 }
+
+#btn-to-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    display: none;
+    right: 32px;
+    bottom: 32px;
+    color: white;
+}
+
+#btn:hover {
+    color: white;
+}
