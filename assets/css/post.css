@@ -57,6 +57,24 @@ img {
     -webkit-font-smoothing: antialiased;
 }
 
+.post-content {
+    padding: 20px 12%;
+    height: auto;
+    margin: auto auto;
+    word-wrap: break-word;
+    font-size: 1em;
+    line-height: 1.8;
+    overflow: hidden;
+    background: ghostwhite;
+    display: block;
+    text-rendering: geometricPrecision;
+    letter-spacing: 0.03em;
+    color: #363636;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
 .header-inside {
     display: table;
     width: 100%;
@@ -70,24 +88,6 @@ img {
 
 .home-title a:hover {
     color: gray;
-}
-
-.post-content {
-    word-wrap: break-word;
-    font-size: 1em;
-    line-height: 1.8;
-    overflow: hidden;
-    background: ghostwhite;
-    display: block;
-    padding: 2% 10% 5% 10%;
-    width: 60%;
-    margin: 64px 10% 0;
-    text-rendering: geometricPrecision;
-    letter-spacing: 0.03em;
-    color: #363636;
-    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
 }
 
 .category-item {
