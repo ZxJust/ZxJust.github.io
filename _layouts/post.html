@@ -12,7 +12,10 @@
 {% include header.html %}
 
 <div id="content" class="post-content">
-    <div id="post-content"> {{ content }}</div>
+    <div id="post-content">
+        <h2>{{page.title}}</h2>
+        {{ content }}
+    </div>
 
     {% include ds.html %}
 </div>
